@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About bonchuacut</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #4f46e5;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #4f46e5;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      padding: 120px 8% 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 70px;
+      background: linear-gradient(135deg, #eef2ff, #ffffff);
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text span {
+      color: #4f46e5;
+      font-weight: bold;
+    }
+
+    .hero-text h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.05;
+      margin: 10px 0 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 25px;
+      background: #4f46e5;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #3730a3;
+      transform: translateY(-2px);
+    }
+
+    .profile-photo {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 8px solid white;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    /* Sections */
+    section {
+      padding: 90px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #777;
+    }
+
+    /* About */
+    .about {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #4f46e5;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #666;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+      background: #111827;
+      color: white;
+    }
+
+    .contact p {
+      color: #cbd5e1;
+      margin-bottom: 25px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #818cf8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b1120;
+      color: #94a3b8;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 35px;
+      }
+
+      .profile-photo {
+        width: 210px;
+        height: 210px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">  BON</div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+      <span>Hello, I'm</span>
+
+      <h1>Bon<br>Chua Cut</h1>
+
+      <p>
+        OC CAC VI EN, BI CAM, LE HA ANH TUAN KHONG CHU HA
+      </p>
+
+      <a href="#about" class="button">
+        TIM HIEU VE BON
+      </a>
+    </div>
+
+    <!-- Replace this URL with the person's photo -->
+    <img
+      class="profile-photo"
+      src="https://scontent.fhan17-1.fna.fbcdn.net/v/t1.15752-9/825312674_1684204963709221_7293805334171586132_n.jpg?stp=dst-jpg_tt6&cstp=mx952x1920&ctp=s952x1920&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGFkyZvx2Dc5AtUHfb1C53BSd5rjTzmALtJ3muNPOYAu9cQOAuc_yc4zxglMr-2dOJ7a6icrDoHpzqkl6PFv0Kx&_nc_ohc=ccL_GtXK_cgQ7kNvwHZhtMd&_nc_oc=AdqNOLVhQPtwusdp-AY5T1IdtJrZVUHb8geSDVzf6A0CfikioNREHUcH3dopcPoUtbg&_nc_zt=23&_nc_ht=scontent.fhan17-1.fna&_nc_ss=7b2a8&oh=03_Q7cD6gEa2R7n4cRBKqA8B5jD5pfnVFhNIK6LWR00FgtDTkB3yQ&oe=6AE5E7A2"
+      alt="Portrait of LE ANH TUAN"
+    >
+
+  </section>
+
+
+  <!-- About -->
+  <section id="about">
+
+    <div class="section-title">
+      <h2>About Me</h2>
+      <p>A little ABOUT BON CHUA CUT</p>
+    </div>
+
+    <div class="about">
+      <p>
+        Hi! My name is LE ANH TUAN. I am passionate about OC CAC VI EN, BI CAM. I love EATING POO POO,
+        creating, and connecting with CORG1. I enjoy exploring
+        new TOILET and turning them into interesting POO POO.
+      </p>
+
+      <br>
+
+      <p>
+        Outside of work and study, I enjoy listening to FRUSTRATING PEOPLE,
+        MUTING MY MICROPHONE, reading, and spending
+        time with MY BROTHER CORG1.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- Skills / Interests -->
+  <section id="skills">
+
+    <div class="section-title">
+      <h2>What I Enjoy</h2>
+      <p>Some of my interests and strengths</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>💻 Technology</h3>
+        <p>
+          i USE MY BROTHER'S TECH TO PLAY GAMES, BUILD THINGS, and solve problems. MOST OF THEM ARE ABOUT OC CAC VI EN, BI CAM, LE HA ANH TUAN KHONG CHU HA.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🎨 Creativity</h3>
+        <p>
+          I love PLAYING TAMYN
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🌎 Exploration</h3>
+        <p>
+          I enjoy AN CUT
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+
+    <div class="section-title">
+      <h2>CONTACT BON</h2>
+      <p>
+        Feel free to reach out and say hello.
+      </p>
+    </div>
+
+    <a class="button" href="mailto:hello@example.com">
+      Contact Me
+    </a>
+
+    <br><br>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/tuanaakab">Instagram</a>
+      <a href="https://www.facebook.com/polpotto.le">Facebook</a>
+      <a href="https://discordapp.com/users/751722943851135027">Discord</a>
+    </div>
+
+  </section>
+
+
+  <footer>
+    © 2026 bon chua cut. All rights reserved.
+  </footer>
+
+</body>
+</html>
